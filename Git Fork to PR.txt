@@ -1,0 +1,147 @@
+Now Fork to Pull Request Flow.
+
+abhinav - self 
+
+ade-axelor - company or second account or contributer
+
+1)Create One Project in ade-axelor ( second account ) or the project you want contribute find out
+
+2)copy it link and search a project and fork that project in your account : Right side top have button to fork
+
+3)clone that fork into local repository
+
+git clone your account ( abhinav ) copy ssh path
+
+git clone git@github.com:Abhinav-Devkar7794/UpstreamProject.git
+
+4)now time to set remote to (second account project or contribute project )
+
+	-- steps for set up --
+
+ git remote add 'upstream' git@github.com:ade-axelor/UpstreamProject.git
+
+ check remotes :
+
+ git remote
+  origin
+  upstream
+
+Now see path for origin and upstream 
+
+ git remote -v
+
+origin  git@github.com:Abhinav-Devkar7794/UpstreamProject.git (fetch)
+origin  git@github.com:Abhinav-Devkar7794/UpstreamProject.git (push)
+upstream        git@github.com:ade-axelor/UpstreamProject.git (fetch)
+upstream        git@github.com:ade-axelor/UpstreamProject.git (push)
+
+
+now set is done with comapny and abhinav :
+
+Now Task assign to abhinav :
+
+task - 101 , Branch : Master
+
+Discription :
+
+add grid
+
+steps to complete a task :
+
+1) Create Branch from master
+
+git branch mas-101
+
+switch to mas-101
+
+git checkout mas-101
+
+Now perform your work :
+
+check using diffrence:
+
+git diff
+
+git add .
+
+git commit -m "mas-101 add grid"
+
+git push origin mas-101
+
+now main work to generate pull Request :
+
+choose Right brnach ex :  Master , Dev in which Task need to Perform and Your Task branch mas-101
+
+send pull Request
+
+===================
+
+Now Job start by Company who accept your pull request or not ?
+
+There is 3 option pull Request , own has it's changes 
+
+if Pull Request Merge with
+
+1) merge pull request :
+
+in which two commit history added : 
+	1) self added commit 
+	2) company clear it merge particular pull request
+
+	
+		2) company clear it merge particular pull request
+	
+	commit f8a0cc5f428bef7a9d1a06fad70d2911cc86695b (origin/master, origin/HEAD)
+	Merge: 7232adb eabeb76
+	Author: ade-axelor <43667995+ade-axelor@users.noreply.github.com>
+	Date:   Sat May 18 15:12:30 2019 +0100
+
+    	Merge pull request #1 from Abhinav-Devkar7794/mas-101
+
+		1) self added commit 
+
+    	Master-101 add panel in form
+
+	commit eabeb76342e06b2fea1490f8ae4df032acc7f1bc (origin/mas-101, mas-101)
+	Author: Abhinav-Devkar7794 <devkarabhinav@gmail.com>
+	Date:   Sat May 18 15:10:34 2019 +0100
+
+
+
+2) Rebase and Merge :
+
+	1) Only one commit added in history
+
+	commit 27217a95b683147a96f8fc8616928f177a4cc9dd (upstream/master, master)
+	Author: Abhinav-Devkar7794 <devkarabhinav@gmail.com>
+	Date:   Sat May 18 15:24:38 2019 +0100
+
+    	Master-102 add grid in view
+
+3) Squash  and Merge 
+	
+	it's same like Rebase and Merge but only add Merge id into commit message at the end.
+
+	commit cddf9087d8a4c26f693fcfda7ed2a5f61a0f61d8
+	Author: Abhinav-Devkar7794 <47048411+Abhinav-Devkar7794@users.noreply.github.com>
+	Date:   Sat May 18 16:06:46 2019 +0100
+
+    	mas-103 new file and task is done (#3)
+
+
+
+when pull request Resend again for changes ( in which pull request is open not merge ok )
+
+1) REset a last commit 
+
+git reset HEAD~1
+
+2) perform changes
+
+3) git add .
+
+   git commit -m "master-106 add rebase and change open" ( must be keep message same )
+ 
+`  git push -f origin mas-106 ( must use oprion -f)
+
+

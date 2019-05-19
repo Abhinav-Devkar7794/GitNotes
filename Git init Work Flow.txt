@@ -1,0 +1,49 @@
+1) first create local repositiry
+
+D/GitWorld/RemoteLocal
+
+- > git init
+
+Now RemoteLocal folder become Local Repository
+
+Now time to create Remote Repository On GitHub
+
+Now to Time Link With Remote Repository with Local repository
+
+git remote add 'origin-remote' remote repository path (ssh or http )
+
+git remote  ( before set remote repository you ca get any output with this command )
+
+origin
+
+git remote -v
+
+origin  git@github.com:Abhinav-Devkar7794/RightOneRemote.git (fetch)
+origin  git@github.com:Abhinav-Devkar7794/RightOneRemote.git (push)
+
+
+	if ( You want Remote Repository commit History Then Pull first then perform remain opration on your local repository )
+
+		git pull origin master
+
+		and check git log
+
+		you get one commit in log this commit of initial commit new repository
+
+		
+		Now start your work
+
+		git add .
+
+		git commit -m "first"
+
+		git push origin master
+
+	else ( if do not want initial commit then start work with out taking remote pull request )
+
+		git add .
+	
+		git commit -m "first"
+
+		git push -f origin master ( -f or -force ) ( this force push overide exisiting history of remote repository )
+
