@@ -1,0 +1,47 @@
+More Details Link :
+
+http://buzzedcode.com/upload-angular-project-to-github/
+
+1) Create Any Project : Angular , Recat , Spring 
+  
+    : Remove .git folder from it.
+    
+2)  Create Remote Repository : on GitHub
+
+3) Now Create Your Project To Git Project
+
+  1) go inside project folder Remove - >  git folder -> git init ( command : it make local repository )
+  
+  2)  git add .  ( add peoject to local Repository )
+  
+  3)  git commit –m “initial commit” ( commit a code to local Repository )
+  
+  4) git remote add origin https://github.com/dipneupane/AngularInMemoryWebApi.git  ( link your Loacl Repository to Remote Repository )
+  
+  5) git push –u origin master ( push your local repository to Remote repository )
+  
+  
+  Good Job ... Work Done ....
+  
+  
+  Now When You want another to work another version of Project .
+  
+  1) Create  Branch :
+   
+    git branch new_branch ( create branch )
+    
+    git branch ( see all branches )
+    
+    git checkout new_branch ( swith from master to new_branch )
+    
+    
+    now you want to push your code to Remote Repository with new Created Branch .
+    
+     git push origin new_branch  ( origin : is name of ( address ) for remote repository )
+
+    
+    
+    
+    
+  
+  
