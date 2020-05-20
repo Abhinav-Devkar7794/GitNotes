@@ -1,0 +1,9 @@
+
+When You Download A Project Of Any Fronend Technology : Angulat React etc
+
+You Must use command npm install 
+
+npm install :  this command download all librabry define package.json  file.
+
+npm : node package manager ( its like maven for javascript frontend technolofy it's download all libraby from server )
+
